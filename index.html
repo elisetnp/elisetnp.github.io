@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+
+        PPPPPPPPPPPPPP   PPPPPPPPPPPPP  
+        PPPPPPPPPPPPPP   PPPPPPPPPPPPP  
+        PPPP                  PPP       
+        PPPPPPPPPPPPPP        PPP
+        PPPPPPPPPPPPPP        PPP
+        PPPP                  PPP        
+        PPPPPPPPPPPPPP        PPP        
+        PPPPPPPPPPPPPP        PPP       
+    	
+    Hello, glad you're here !
+	
+	-->
+
+    <meta name="author" content="Tran">
+
+    <meta name="description" content="Elise Phung T, an Innovation enthusiast. A phoenix learning to fly.">
+    <link rel="icon" href="img/red-heart.png">
+    <link rel="canonical" href="http://tnp1606.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Elise Phung T - Phoenix to fly" />
+    <meta property="og:description" content="Elise Phung T, an Innovation enthusiast. A phoenix learning to fly." />
+    <meta property="og:url" content="http://tnp1606.github.io/" />
+    <meta property="og:site_name" content="Elise Phung T" />
+    <meta property="og:image" content="img/cherry-blossom-cover.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Elise Phung T, an Innovation enthusiast. A phoenix learning to fly."/>
+    <meta name="twitter:title" content="Elise Phung T - Phoenix to fly" />
+    <meta name="twitter:image" content="img/cherry-blossom-cover.png" />
+
+    <title>Elise Phung T - Phoenix to fly</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+      <style>
+      @charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500);
+@keyframes change-text {
+  0%, 55%, 100% {
+    transform: translateY(-45%);
+  }
+  5%, 50% {
+    transform: translateY(-95%);
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+}
+@keyframes text-blink {
+  50% {
+    border-color: transparent;
+  }
+}
+body {
+  box-sizing: border-box;
+  color: #0d3838;
+  font-family: "Josefin Sans", cwtexyen, sans-serif;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #bcbcbc;
+}
+
+a {
+  text-decoration: none;
+  color: #027373;
+}
+a:hover {
+  color: #5aaaaa;
+}
+
+.wrapper {
+  margin: 5% 10%;
+}
+
+.heading {
+  background-color: #f1efed;
+  padding: 5%;
+  text-align: center;
+}
+.heading h1 {
+  margin: 0 auto;
+  font-family: "Source Code Pro", monospace;
+  font-size: 50px;
+  font-weight: 500;
+  animation: 8s typing steps(16, end), 0.5s text-blink step-end infinite;
+  width: 9.6em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 30px;
+}
+@media screen and (max-width: 550px) {
+  .heading h1 {
+    font-size: 30px;
+  }
+}
+
+.sm-name {
+  display: none;
+  color: #027373;
+}
+@media screen and (max-width: 550px) {
+  .sm-name {
+    display: block;
+  }
+}
+
+.name {
+  margin-top: 10px;
+  height: 52px;
+  overflow: hidden;
+}
+@media screen and (max-width: 550px) {
+  .name {
+    display: none;
+  }
+}
+.name ul {
+  list-style: none;
+  padding: 0;
+  color: #027373;
+  font-size: 50px;
+  animation: 8s change-text linear infinite;
+}
+.name ul li {
+  padding-top: 5px;
+  line-height: 52px;
+}
+
+.social ul {
+  list-style: none;
+  padding-left: 0;
+}
+.social ul a {
+  color: #0d3838;
+}
+.social ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.block h2::first-letter {
+  font-size: 30px;
+  color: #027373;
+}
+.block h2 {
+  font-family: "Source Code Pro", monospace;
+  border-bottom: 2px solid;
+}
+.block ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info .email::before {
+  content: "elisetnp@gmail.com";
+}
+
+.research {
+  color: #AD0000;
+}
+
+.pri-tag {
+  display: inline-block;
+  padding: 8px;
+  background: #0d3838;
+  color: #E8F1F2;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.sec-tag {
+  display: inline-block;
+  padding: 8px;
+  background: #E8F1F2;
+  color: #0d3838;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.about p::before {
+  content: "    ";
+}
+
+.degree h3, .exp-item h3 {
+  margin: 13px 0 3px 0;
+  padding: 0;
+}
+.degree p, .exp-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.exp-item ul {
+  list-style: square;
+  padding-left: 15px;
+}
+.exp-item ul li {
+  padding-top: 5px;
+}
+
+.profile {
+  background-size: 100%;
+  border-radius: 50%;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-image: url(img/draw-1.png);
+}
+
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  <section class="heading">
+  <h1>Curriculum Vitae</h1>
+  <div class="profile"></div>
+  <div class="name">
+    <ul>
+      <li>Elise Phung TRAN</li>
+      <li style="font-size: 0.5em">(My name means Phoenix)</li>
+    </ul>
+  </div>
+  <h2 class="sm-name">Elise Phung TRAN<br>(My name means Phoenix)</h2>
+  <div class="social">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/elisephungtran/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+      <li><a href="https://codepen.io/tnp1606/" target="_blank"><i class="fa fa-codepen fa-2x"></i></a></i>
+      </li>
+      <li><a href="https://github.com/tnp1606/" target="_blank"><i class="fa fa-github fa-2x"></i></a></i>
+      </li>
+      <li><a href="/"><i class="fa fa-globe fa-2x"></i></a></i>
+      </li>
+    </ul>
+  </div>
+</section>
+<div class="wrapper">
+  <section class="block info">
+    <h2>Personal Information</h2>
+    <ul>
+      <li><i class="fa fa-envelope-o"></i> <span class="email"></span></li>
+      <li><i class="fa fa-paper-plane-o"> </i> Paris area, France</li>
+      <li><i class="fa fa-heart-o"></i> Vietnam</li>
+    </ul>
+    <ul>
+      <li class="pri-tag">Vietnamese</li>
+      <li class="pri-tag">English</li>
+      <li class="pri-tag">French</li>
+    </ul>
+  </section>
+  <section class="block edu">
+    <h2>Education</h2>
+    <div class="degree">
+     <h3>Master 2 | Data Science (IMSD) <sup>2020 – 2021</sup></h3>
+      University of Paris-Saclay
+    </div>
+    <div class="degree">
+     <h3>Master 2 | Network Industries and Digital Economy (IREN) <sup>2019 – 2020</sup></h3>
+      Paris-Dauphine University & University of Paris-Saclay
+    </div>
+    <div class="degree">
+     <h3>Master 1 | Innovation, Entreprise, Society (IES) <sup>2018 – 2019 </sup></h3>
+      École Polytechnique & University of Paris-Saclay
+    </div>
+    <div class="degree">
+      <h3>BAC +4 | Marketing & Business Administration <sup>2012 – 2016 </sup> </h3>
+      <p>University of Economics, Ho Chi Minh City 
+      </p>
+    </div>
+  </section>
+  <section class="block edu">
+    <h2>Academic Achievement</h2>
+    <div class="degree">
+     <h3>Eiffel Excellence Scholarship<sup> 2019 – 2020 </sup></h3>
+     awarded by the French Ministry for Europe and Foreign Affairs
+    </div>
+    <div class="degree">
+     <h3>GPA: 15.08/20 <sup>2012 – 2016 </sup></h3>
+      4 UEH scholarships for excellent students
+    </div>
+    <div class="degree">
+      <h3>Digital Marketing Postersession  <sup>2015 </sup> </h3>
+      1st prize – Big Data 
+    </div>
+    <div class="degree">
+      <h3>UEH Excellent Assignment Award  <sup>2014 </sup> </h3>
+      Strategic Management<!-- Analysis of some factors affecting the beer industry in Vietnam – opportunities and challenges for enterprises from now until 2020-->
+    </div>
+    <div class="degree">
+      <h3>Online courses</h3>
+      <p><b>MicroMasters® Program in Data Science | UCSanDiegoX (Ongoing) </b></p>
+      <p>The Data Scientist’s Toolbox | Johns Hopkins University </p>
+      <p>Introduction to Psychology | University of Toronto</p>
+      <p>Learning how to learn | University of California, San Diego </p>
+      <p>Graphic design Specialization | California Institute of the Arts</p>  
+      <p>Web design Specialization | University of Michigan</p>
+      <p>English Composition I | Duke University  </p>
+    </div>
+  </section>
+    <section class="block exp">
+    <h2>Work Experience</h2>
+    <div class="exp-item">
+      <h3>Apprentice in Data-Driven Marketing, Stellantis <sup>2020 - 2021</sup> </h3>
+      <p>
+      </p>
+    </div><div class="exp-item">
+      <h3>Research Intern, Télécom Paris <sup>2020</sup> </h3>
+      <p>
+      </p>
+    </div>
+    <div class="exp-item">
+      <h3>Research Assistant, RITM @ Paris-Sud University <sup>2019</sup> </h3>
+      <p>
+        Research work on digital platforms</p>
+      <p>Participant at the World Conference on Intellectual Capital for Communities: Artificial Intelligence.</p>
+    </div>
+    <div class="exp-item">
+      <h3>Business Analyst & Jr Project Manager, Amagumo Labs <sup>2017 – 2018</sup> </h3>
+      <p>
+        Assess project scope and business processes of clients </p><p>Translate requirements into software features, Quality Assurance & Quality Control</p><p> In charge of User Experience, User Interface design & WP projects 
+      </p>
+    </div>
+    <div class="exp-item">
+      <h3>Network Operations Center Specialist, IPSIP Group <sup>2016</sup> </h3>
+      <p>Manage and supervise the monitoring systems for B-process and Mailjet. 
+      </p>
+    </div><div class="exp-item">
+      <h3>Marketing assistant, International Languages and Country Studies Institute, UEH <sup>2015</sup> </h3>
+      <p>In charge of external communications & the TOEIC Test
+      </p>
+    </div><div class="exp-item">
+      <h3>Other jobs <sup>2010 – 2014</sup> </h3>
+      <p>Market research collaborator, Nielsen Vietnam, 2014   </p><p>Quality Control Specialist, Marketing Communications Co. Ltd, 2013 </p><p> Sales assistant, Orange Fashion, 2012 </p><p>Sales assistant, ABC Bakery Pham Ngu Lao, 2011</p><p> English interpreter, YAN NEWS, 2010
+      </p>
+    </div>
+    <div class="exp-item">
+      
+    </div>
+  </section>
+
+  <section class="block edu">
+    <h2>Activities & volunteer work</h2>
+    <div class="degree">
+     <h3>Salon « Bienvenue en France! » - l'Ambassade de France au Vietnam <sup>2017</sup></h3>
+      Interpreter for Audencia Business School's representative 
+    </div>
+    <div class="degree">
+     <h3>Narrow the gap - LIN Center for Community Development <sup>2016</sup></h3>
+      Communications volunteer: 
+      In charge of "Doing good together" campaign with more than 1000 people involved.
+    </div>
+    <div class="degree">
+      <h3>Forum « Etudier en France » - l'Union des étudiants vietnamiens en France  <sup>2013 – 2017 </sup></h3>
+      <p>Event Volunteer for 5 years in a row.</p>
+    </div>
+    <div class="degree">
+      <h3>French Club - UEH Student Association <sup>2013 - 2014 </sup> </h3>
+      <p>Club President: Lead a core team of 10 people to host 12 college events and 3 internal training programs. </p>
+      <p>Create the “Fly over Europe’s skies” competition with over 4000 participants. 
+      </p>
+      <p>Dean's Citation for Leadership </p>
+    </div>
+    <div class="degree">
+      <h3>Entrance Exam Support Program - UEH Student Association <sup>2014 </sup> </h3>
+      <p>Communications Volunteer: edit newspapers, write articles and conduct interviews. 
+      </p>
+    </div>
+    <div class="degree">
+      <h3>Exchange Student Program, Rissho University <sup>2013</sup> </h3>
+      <p>Volunteer: welcome students from Rissho University (Japan) to Hochiminh City. 
+      </p>
+    </div>
+  </section>
+  <section class="block skills">
+    <h2>Toolbox</h2>
+    <ul>
+      <li class="pri-tag">Data Science</li>
+      <li class="sec-tag">Python</li>
+      <li class="sec-tag">Jupyter notebooks</li>
+      <li class="sec-tag">pandas</li>
+      <li class="sec-tag">NumPy</li>
+      <li class="sec-tag">Matplotlib</li>
+      <li class="sec-tag">scikit learn</li>
+      <li class="sec-tag">NLTK</li>
+      <li class="sec-tag">Github</li>
+      <li class="sec-tag">SQL</li>
+      <li class="sec-tag">Google Cloud Platform</li>
+      <li class="sec-tag">Splunk</li>
+    </br>
+      <li class="pri-tag">Web Design</li>
+      <li class="sec-tag">HTML</li>
+      <li class="sec-tag">CSS</li>
+      <li class="sec-tag">JavaScript</li>
+      <li class="sec-tag">Wordpress</li>
+      <li class="sec-tag">Bootstrap</li>
+      <li class="sec-tag">SEO</li>
+      <li class="sec-tag">UX</li>
+      <li class="sec-tag">UI</li>
+      <li class="sec-tag">Gimp</li>
+    </br>
+      <li class="pri-tag">Project Management</li>
+      <li class="sec-tag">Gantt chart</li>
+      <li class="sec-tag">Microsoft Office</li>
+    </ul>
+  </section>
+  <section class="block skills">
+    <h2>Personal interests</h2>
+    <ul>
+      <li class="pri-tag">Reading</li>
+      <li class="pri-tag">Writing</li>
+      <li class="sec-tag">Drawing</li>
+      <li class="sec-tag">Photography</li>
+      <li class="pri-tag">Social Psychology</li>
+      <li class="pri-tag">Research</li>
+      <li class="pri-tag">Data Science</li>
+      <li class="pri-tag">Learning new things</li>
+      
+    </ul>
+  </section>
+  <!-- <section class="block about">
+    <h2>References</h2>
+    <div class="exp-item">
+    <h3>Mr. Philippe Nguyen</h3>
+    <p>CEO & Founder
+    <a href="http://amagumolabs.com" target="_blank"> @ Amagumo Labs</a></p>
+    </div>
+    <div class="exp-item">
+    <h3>Ms. Tran Ha Quyen</h3>
+    <p>Instructor <a href="http://www.ueh.edu.vn/default_en.aspx" target="_blank">@ School of Economic Mathematics and Statistics, UEH</a></div>
+  </section> -->
+  <footer><!-- DOWNLOAD CV BUTTON -->Last Updated: 2021-03. Design on CodePen.</footer>
+  
+</div>
+  
+  
+
+
+  
+  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119411314-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-119411314-1');
+</script>
+</body>
+</html>
