@@ -226,7 +226,7 @@ a:hover {
   width: 100px;
   height: 100px;
   display: inline-block;
-  background-image: url(IMG/draw-1.png);
+  background-image: url(IMG/DSC00307_150x150.jpg);
 }
 
     </style>
@@ -440,17 +440,6 @@ a:hover {
       <li class="sec-tag">AWS</li>
       <li class="sec-tag">GCP</li>
 
-    </br>
-      <li class="pri-tag">Web Design</li>
-      <li class="sec-tag">HTML</li>
-      <li class="sec-tag">CSS</li>
-      <li class="sec-tag">JavaScript</li>
-      <li class="sec-tag">Wordpress</li>
-      <li class="sec-tag">Bootstrap</li>
-      <li class="sec-tag">SEO</li>
-      <li class="sec-tag">UX</li>
-      <li class="sec-tag">UI</li>
-
     </ul>
   </section>
   <section class="block skills">
@@ -460,23 +449,12 @@ a:hover {
       <li class="pri-tag">Writing</li>
       <li class="sec-tag">Pragmatic Programming</li>
       <li class="pri-tag">Social Psychology</li>
-      <li class="pri-tag">Research</li>
+      <li class="pri-tag">Blockchain</li>
       <li class="pri-tag">Data Science</li>
       <li class="pri-tag">Learning new things</li>
       
     </ul>
   </section>
-  <!-- <section class="block about">
-    <h2>References</h2>
-    <div class="exp-item">
-    <h3>Mr. Philippe Nguyen</h3>
-    <p>CEO & Founder
-    <a href="http://amagumolabs.com" target="_blank"> @ Amagumo Labs</a></p>
-    </div>
-    <div class="exp-item">
-    <h3>Ms. Tran Ha Quyen</h3>
-    <p>Instructor <a href="http://www.ueh.edu.vn/default_en.aspx" target="_blank">@ School of Economic Mathematics and Statistics, UEH</a></div>
-  </section> -->
   <footer><!-- DOWNLOAD CV BUTTON -->Last Updated: 2023-12. Design on CodePen.</footer>
   
 </div>
@@ -498,13 +476,61 @@ a:hover {
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119411314-1"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119411314-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-119411314-1');
+</script> -->
+
+<!-- Display the like count -->
+<p id="likeCount">Likes: <span id="countValue">0</span></p>
+
+<!-- The like button -->
+<button onclick="like()">Like</button>
+
+<script>
+  // Replace with your GitHub repository and issue number
+  const repoOwner = 'elisetnp';
+  const repoName = 'elisetnp.github.io';
+  const issueNumber = '3'; // Replace with the actual issue number
+
+  // Initialize the like count from GitHub Issue or default to 0
+  fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/issues/${issueNumber}`)
+    .then(response => response.json())
+    .then(data => {
+      var currentLikes = data.reactions['+1'] || 0;
+      document.getElementById("countValue").innerText = currentLikes;
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+  // JavaScript function to handle the like button click
+  function like() {
+    // Increment the like count
+    currentLikes++;
+
+    // Update the like count display
+    document.getElementById("countValue").innerText = currentLikes;
+
+    // Update the GitHub Issue with the new like count
+    fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/issues/${issueNumber}`, {
+      method: 'PATCH',
+      headers: {
+        'Authorization': 'Bearer YOUR_GITHUB_TOKEN', // Replace with your GitHub token
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        reactions: { '+1': currentLikes }
+      })
+    })
+    .then(response => response.json())
+    .then(data => console.log('Updated issue:', data))
+    .catch(error => console.error('Error updating issue:', error));
+  }
 </script>
+
+
 </body>
 </html>
