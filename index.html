@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,469 +7,515 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--
+        PPPPPPPPPPPPPP   PPPPPPPPPPPPP
+        PPPPPPPPPPPPPP   PPPPPPPPPPPPP
+        PPPP                  PPP
+        PPPPPPPPPPPPPP        PPP
+        PPPPPPPPPPPPPP        PPP
+        PPPP                  PPP
+        PPPPPPPPPPPPPP        PPP
+        PPPPPPPPPPPPPP        PPP
 
-        PPPPPPPPPPPPPP   PPPPPPPPPPPPP  
-        PPPPPPPPPPPPPP   PPPPPPPPPPPPP  
-        PPPP                  PPP       
-        PPPPPPPPPPPPPP        PPP
-        PPPPPPPPPPPPPP        PPP
-        PPPP                  PPP        
-        PPPPPPPPPPPPPP        PPP        
-        PPPPPPPPPPPPPP        PPP       
-    	
-    Hello, is it me you're looking for ?? :>
-    I created this page years ago pls dont judge my teenage code :*)
-	
-	-->
+        Hello, is it me you're looking for ?? :>
+    -->
 
     <meta name="author" content="Tran">
-
-    <meta name="description" content="Elise Tran, an Innovation & Data enthusiast.">
+    <meta name="description" content="Elise Tran, an experienced Data Engineer.">
     <link rel="icon" href="IMG/red-heart.png">
     <link rel="canonical" href="http://elisetnp.github.io/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Elise Tran - Phoenix to fly" />
-    <meta property="og:description" content="Elise Tran, an Innovation & Data enthusiast." />
+    <meta property="og:description" content="Elise Tran, an experienced Data Engineer." />
     <meta property="og:url" content="http://elisetnp.github.io/" />
     <meta property="og:site_name" content="Elise Tran" />
     <meta property="og:image" content="IMG/cherry-blossom-cover.png" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="Elise Tran, an Innovation & Data enthusiast"/>
+    <meta name="twitter:description" content="Elise Tran, an experienced Data Engineer"/>
     <meta name="twitter:title" content="Elise Tran" />
     <meta name="twitter:image" content="IMG/cherry-blossom-cover.png" />
 
     <title>Elise Tran</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
-
-<!--
- ===========	START CSS ===========	
-	-->
-      <style>
+    <style>
       @charset "UTF-8";
-@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500);
-@keyframes change-text {
-  0%, 55%, 100% {
-    transform: translateY(-45%);
-  }
-  5%, 50% {
-    transform: translateY(-95%);
-  }
-}
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-}
-@keyframes text-blink {
-  50% {
-    border-color: transparent;
-  }
-}
-body {
-  box-sizing: border-box;
-  color: #0d3838;
-  font-family: "Josefin Sans", cwtexyen, sans-serif;
-}
+      @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+      @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+      @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500);
 
-footer {
-  margin-top: 30px;
-  text-align: center;
-  color: #bcbcbc;
-}
+      @keyframes change-text {
+        0%, 55%, 100% { transform: translateY(-45%); }
+        5%, 50% { transform: translateY(-95%); }
+      }
 
-a {
-  text-decoration: none;
-  color: #027373;
-}
-a:hover {
-  color: #5aaaaa;
-}
+      @keyframes typing {
+        0% { width: 0; }
+      }
 
-.wrapper {
-  margin: 5% 10%;
-}
+      @keyframes text-blink {
+        50% { border-color: transparent; }
+      }
 
-.heading {
-  background-color: #f1efed;
-  padding: 5%;
-  text-align: center;
-}
-.heading h1 {
-  margin: 0 auto;
-  font-family: "Source Code Pro", monospace;
-  font-size: 50px;
-  font-weight: 500;
-  animation: 8s typing steps(16, end), 0.5s text-blink step-end infinite;
-  width: 9.6em;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-size: 30px;
-}
-@media screen and (max-width: 550px) {
-  .heading h1 {
-    font-size: 30px;
-  }
-}
+      body {
+        box-sizing: border-box;
+        color: #0d3838;
+        font-family: "Josefin Sans", cwtexyen, sans-serif;
+      }
 
-.sm-name {
-  display: none;
-  color: #027373;
-}
-@media screen and (max-width: 550px) {
-  .sm-name {
-    display: block;
-  }
-}
+      footer {
+        margin-top: 30px;
+        text-align: center;
+        color: #bcbcbc;
+      }
 
-.name {
-  margin-top: 10px;
-  height: 52px;
-  overflow: hidden;
-}
-@media screen and (max-width: 550px) {
-  .name {
-    display: none;
-  }
-}
-.name ul {
-  list-style: none;
-  padding: 0;
-  color: #027373;
-  font-size: 50px;
-  animation: 8s change-text linear infinite;
-}
-.name ul li {
-  padding-top: 5px;
-  line-height: 52px;
-}
+      a {
+        text-decoration: none;
+        color: #027373;
+      }
 
-.social ul {
-  list-style: none;
-  padding-left: 0;
-}
-.social ul a {
-  color: #0d3838;
-}
-.social ul li {
-  display: inline-block;
-  margin: 0 5px;
-}
+      a:hover {
+        color: #5aaaaa;
+      }
 
-.block h2::first-letter {
-  font-size: 30px;
-  color: #027373;
-}
-.block h2 {
-  font-family: "Source Code Pro", monospace;
-  border-bottom: 2px solid;
-}
-.block ul {
-  list-style: none;
-  padding-left: 0;
-}
+      .wrapper {
+        margin: 5% 10%;
+      }
 
-.block ul li {
-  padding-bottom: 5px;
-}
+      .heading {
+        background-color: #f1efed;
+        padding: 5%;
+        text-align: center;
+      }
 
-.info .email::before {
-  content: "elisetnp@gmail.com";
-}
+      .heading h1 {
+        margin: 0 auto;
+        font-family: "Source Code Pro", monospace;
+        font-size: 30px;
+        font-weight: 500;
+        animation: 8s typing steps(16, end), 0.5s text-blink step-end infinite;
+        width: 9.6em;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+      }
 
-.research {
-  color: #AD0000;
-}
+      @media screen and (max-width: 550px) {
+        .heading h1 { font-size: 30px; }
+      }
 
-.pri-tag {
-  display: inline-block;
-  padding: 8px;
-  background: #0d3838;
-  color: #E8F1F2;
-  margin: 5px;
-  border-radius: 5px;
-}
+      .sm-name {
+        display: none;
+        color: #027373;
+      }
 
-.sec-tag {
-  display: inline-block;
-  padding: 8px;
-  background: #E8F1F2;
-  color: #0d3838;
-  margin: 5px;
-  border-radius: 5px;
-}
+      @media screen and (max-width: 550px) {
+        .sm-name { display: block; }
+      }
 
-.about p::before {
-  content: "    ";
-}
+      .name {
+        margin-top: 10px;
+        height: 52px;
+        overflow: hidden;
+      }
 
-.degree h3, .exp-item h3 {
-  margin: 13px 0 3px 0;
-  padding: 0;
-}
-.degree p, .exp-item p {
-  margin: 0;
-  padding: 0;
-}
+      @media screen and (max-width: 550px) {
+        .name { display: none; }
+      }
 
-.exp-item ul {
-  list-style: square;
-  padding-left: 15px;
-  margin-top: 5px;
-}
-.exp-item ul li {
-  padding-top: 5px;
-}
-.exp-item li {
-  padding-top: 5px;
-}
+      .name ul {
+        list-style: none;
+        padding: 0;
+        color: #027373;
+        font-size: 50px;
+        animation: 8s change-text linear infinite;
+      }
 
+      .name ul li {
+        padding-top: 5px;
+        line-height: 52px;
+      }
 
-.profile {
-  background-size: 100%;
-  border-radius: 50%;
-  margin: 20px auto;
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  background-image: url(IMG/DSC00307_150x150.jpg);
-}
+      .social ul {
+        list-style: none;
+        padding-left: 0;
+      }
 
+      .social ul a { color: #0d3838; }
+
+      .social ul li {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .block h2::first-letter {
+        font-size: 30px;
+        color: #027373;
+      }
+
+      .block h2 {
+        font-family: "Source Code Pro", monospace;
+        border-bottom: 2px solid;
+      }
+
+      .block ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .block ul li { padding-bottom: 5px; }
+
+      .info .email::before {
+        content: "elisetnp@gmail.com";
+      }
+
+      .research { color: #AD0000; }
+
+      .pri-tag {
+        display: inline-block;
+        padding: 8px;
+        background: #0d3838;
+        color: #E8F1F2;
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      .sec-tag {
+        display: inline-block;
+        padding: 8px;
+        background: #E8F1F2;
+        color: #0d3838;
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      .about p::before { content: "    "; }
+
+      .degree h3, .exp-item h3 {
+        margin: 13px 0 3px 0;
+        padding: 0;
+      }
+
+      .degree p, .exp-item p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .exp-item ul {
+        list-style: square;
+        padding-left: 15px;
+        margin-top: 5px;
+      }
+
+      .exp-item ul li { padding-top: 5px; }
+      .exp-item li { padding-top: 5px; }
+
+      .profile {
+        background-size: 100%;
+        border-radius: 50%;
+        margin: 20px auto;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        background-image: url(IMG/DSC00307_150x150.jpg);
+      }
     </style>
-</head>
+  </head>
 
-<body translate="no" >
+  <body translate="no">
 
-<!--
- ===========	START BANNER ===========	
-	-->
-  <section class="heading">
-  <h1>Curriculum Vitae</h1>
-  <div class="profile"></div>
-  <div class="name">
-    <ul>
-      <li>Elise Phung TRAN</li>
-      <li style="font-size: 0.5em">Experienced Data Engineer</li>
-    </ul>
-  </div>
-  <h2 class="sm-name">Elise Phung TRAN<br>Experienced Data Engineer</h2>
-  <div class="social">
-    <ul>
-      <li><a href="https://www.linkedin.com/in/elisephungtran/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-      <li><a href="https://codepen.io/tnp1606/" target="_blank"><i class="fa fa-codepen fa-2x"></i></a></i>
-      </li>
-      <li><a href="https://github.com/elisetnp/" target="_blank"><i class="fa fa-github fa-2x"></i></a></i>
-      </li>
-      <li><a href="/TRAN_LoM_202404.pdf" target="_blank><i class="fa-regular fa-envelope fa-2x"></i></a></i>
-      </li>
-    </ul>
-  </div>
-</section>
-<div class="wrapper">
+    <!-- BANNER -->
+    <section class="heading">
+      <h1>Curriculum Vitae</h1>
+      <div class="profile"></div>
 
-<!--
- ===========	START GENERAL INFO ===========	
-	-->
-  <section class="block info">
-    <h2>Personal Information</h2>
-    <ul>
-      <li><i class="fa fa-envelope-o"></i> <span class="email"></span></li>
-      <li><i class="fa fa-paper-plane-o"> </i> born in Saigon 🇻🇳 | based in Paris 🇫🇷</li>
-	<li><i class="fa fa-language"> </i> English, French, Vietnamese, currently learning Japanese</li>
-    </ul>
-    <ul>
-      <li class="pri-tag">Vietnamese</li>
-      <li class="pri-tag">English</li>
-      <li class="pri-tag">French</li>
-    </ul>
-  </section>
+      <div class="name">
+        <ul>
+          <li>Elise Phung TRAN</li>
+          <li style="font-size: 0.5em">Experienced Data Engineer</li>
+        </ul>
+      </div>
 
-<!--
- ===========	START EXP ===========	
-	-->
-  <section class="block exp">
-    <h2>Work Experience</h2>
-<div class="exp-item">
-    <h3>Data Engineer, Free2move <sup>2021 - now</sup></h3>
-    <ul>
-        <li><strong>Data Pipeline Development:</strong> Designed, built, and maintained scalable data pipelines to support real-time and batch data processing.</li>
-        <li><strong>ETL/ELT Expertise:</strong> Implemented ETL/ELT processes to integrate data from multiple sources, ensuring data quality and consistency.</li>
-        <li><strong>Data Warehousing:</strong> Developed and optimized data warehouse and data lake using technologies like PostgreSQL and Snowflake.</li>
-        <li><strong>Data Modeling:</strong> Created efficient data models and schemas to support business intelligence and analytics.</li>
-        <li><strong>Programming & Scripting:</strong> Proficient in Python and SQL for data manipulation, analysis, and automation of data tasks.</li>
-        <li><strong>Big Data Technologies:</strong> Hands-on experience for large-scale data processing.</li>
-        <li><strong>Data Platform:</strong> Deployed and managed data solutions. <a href="https://github.com/elisetnp/airflow_monitoring/tree/main" target="_blank">Demo on Airflow Monitoring</a></li>
-        <li><strong>Data Project Management:</strong> Led end-to-end data projects, from requirements gathering and design to deployment and maintenance.</li>
-        <li><strong>Cross-Functional Collaboration:</strong> Collaborated with platform engineers, data scientists, analysts, and business stakeholders.</li>
-    </ul>
-</div>
+      <h2 class="sm-name">
+        Elise Phung TRAN<br>
+        Experienced Data Engineer
+      </h2>
 
-<div class="exp-item">
-    <h3>Data Engineering Apprentice - Data-Driven Marketing, Stellantis <sup>2020 - 2021</sup></h3>
-    <ul>
-        <li><strong>Data Analysis:</strong> Assisted in analyzing large datasets.</li>
-        <li><strong>Data Integration:</strong> Worked on data ingestion and transformation processes, ensuring data quality and consistency.</li>
-        <li><strong>Machine Learning Models:</strong> Contributed to the development and deployment of machine learning models.</li>
-        <li><strong>Dashboard Development:</strong> Collaborated on creating interactive dashboards.</li>
-        <li><strong>Collaboration:</strong> Worked closely with data consultants to understand requirements and implement data solutions.</li>
-        <li><strong>Documentation:</strong> Assisted in documenting data processes and creating technical reports.</li>
-    </ul>
-</div>
+      <div class="social">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/elisephungtran/" target="_blank" rel="noopener">
+              <i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/elisetnp/" target="_blank" rel="noopener">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:elisetnp@gmail.com">
+              <i class="fa fa-envelope fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-<div class="exp-item">
-    <h3>Research Intern, Télécom Paris <sup>2020</sup></h3>
-    <ul>
-        <li>Research work on microworking.</li>
-	<li>Discovered a strong passion for data and innovative problem-solving techniques.</li>
-    </ul>
-</div>
-<div class="exp-item">
-    <h3>Research Assistant, RITM @ Paris-Sud University <sup>2019</sup></h3>
-    <ul>
-        <li>Research work on digital platforms.</li>
-        <li>Participant at the World Conference on Intellectual Capital for Communities: Artificial Intelligence.</li>
-    </ul>
-</div>
+    <div class="wrapper">
 
-  </section>
+      <!-- PERSONAL INFORMATION -->
+      <section class="block info">
+        <h2>Personal Information</h2>
+        <ul>
+          <li><i class="fa fa-envelope-o"></i> <span class="email"></span></li>
+          <li><i class="fa fa-paper-plane-o"></i> born in Saigon 🇻🇳 | based in Paris 🇫🇷</li>
+          <li><i class="fa fa-language"></i> English, French, Vietnamese, currently learning Spanish</li>
+        </ul>
 
-<!--
- ===========	START EDUCATION ===========	
-	-->
-  <section class="block edu">
-    <h2>Education</h2>
-    <div class="degree">
-     <h3>Master 2 | Data Science (IMSD) <sup>2020 – 2021</sup></h3>
-      University of Paris-Saclay
+        <ul>
+          <li class="pri-tag">Vietnamese</li>
+          <li class="pri-tag">English</li>
+          <li class="pri-tag">French</li>
+        </ul>
+      </section>
+
+      <!-- WORK EXPERIENCE -->
+      <section class="block exp">
+        <h2>Work Experience</h2>
+
+        <div class="exp-item">
+          <h3>Data Engineer, Decathlon <sup>Nov 2024 – Present</sup></h3>
+          <ul>
+            <li>
+              <strong>Data Engineering:</strong>
+              Work across the end-to-end data stack, contributing to the development and maintenance of data solutions supporting CRM use cases.
+            </li>
+            <li>
+              <strong>Data Pipeline Development:</strong>
+              Work on data ingestion, transformation and processing across the CRM data ecosystem.
+            </li>
+            <li>
+              <strong>Data Management:</strong>
+              Contribute to the reliability, quality and consistency of data throughout the data lifecycle.
+            </li>
+            <li>
+              <strong>Technical Collaboration:</strong>
+              Collaborate with technical and business stakeholders to deliver data solutions aligned with business needs.
+            </li>
+            <li>
+              <strong>Business Unit Engagement:</strong>
+              Active member of the business unit event team, latest winner of BU's hackathon.
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <h3>Data Engineer, Free2move <sup>2021 – 2024</sup></h3>
+          <ul>
+            <li>
+              <strong>Data Pipeline Development:</strong>
+              Designed, built and maintained scalable data pipelines to support real-time and batch data processing.
+            </li>
+            <li>
+              <strong>ETL/ELT Expertise:</strong>
+              Implemented ETL/ELT processes to integrate data from multiple sources, ensuring data quality and consistency.
+            </li>
+            <li>
+              <strong>Data Warehousing:</strong>
+              Developed and optimized data warehouse and data lake solutions using technologies like PostgreSQL and Snowflake.
+            </li>
+            <li>
+              <strong>Data Modeling:</strong>
+              Created efficient data models and schemas to support business intelligence and analytics.
+            </li>
+            <li>
+              <strong>Programming & Scripting:</strong>
+              Used Python and SQL for data manipulation, analysis and automation of data tasks.
+            </li>
+            <li>
+              <strong>Big Data Technologies:</strong>
+              Worked with large-scale data processing technologies.
+            </li>
+            <li>
+              <strong>Data Platform & Observability:</strong>
+              Deployed and managed data solutions.
+              <a href="https://github.com/elisetnp/airflow_monitoring/tree/main" target="_blank" rel="noopener">Explore my Airflow Monitoring project</a>.
+            </li>
+            <li>
+              <strong>Data Project Management:</strong>
+              Led end-to-end data projects, from requirements gathering and design to deployment and maintenance.
+            </li>
+            <li>
+              <strong>Cross-Functional Collaboration:</strong>
+              Collaborated with platform engineers, data scientists, analysts and business stakeholders.
+            </li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <h3>Data Engineering Apprentice - Data-Driven Marketing, Stellantis <sup>2020 – 2021</sup></h3>
+          <ul>
+            <li><strong>Data Analysis:</strong> Assisted in analyzing large datasets.</li>
+            <li><strong>Data Integration:</strong> Worked on data ingestion and transformation processes, ensuring data quality and consistency.</li>
+            <li><strong>Machine Learning Models:</strong> Contributed to the development and deployment of machine learning models.</li>
+            <li><strong>Dashboard Development:</strong> Collaborated on creating interactive dashboards.</li>
+            <li><strong>Collaboration:</strong> Worked closely with data consultants to understand requirements and implement data solutions.</li>
+            <li><strong>Documentation:</strong> Assisted in documenting data processes and creating technical reports.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <h3>Research Intern, Télécom Paris <sup>2020</sup></h3>
+          <ul>
+            <li>Research work on microworking.</li>
+            <li>Discovered a strong passion for data and innovative problem-solving techniques.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <h3>Research Assistant, RITM @ Paris-Sud University <sup>2019</sup></h3>
+          <ul>
+            <li>Research work on digital platforms.</li>
+            <li>Participant at the World Conference on Intellectual Capital for Communities: Artificial Intelligence.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="block edu">
+        <h2>Education</h2>
+
+        <div class="degree">
+          <h3>Master 2 | Data Science (IMSD) <sup>2020 – 2021</sup></h3>
+          University of Paris-Saclay
+        </div>
+
+        <div class="degree">
+          <h3>Master 2 | Network Industries and Digital Economy (IREN) <sup>2019 – 2020</sup></h3>
+          Paris-Dauphine University, Télécom Paris & University of Paris-Saclay
+        </div>
+
+        <div class="degree">
+          <h3>Master 1 | Innovation, Entreprise, Society (IES) <sup>2018 – 2019</sup></h3>
+          École Polytechnique & University of Paris-Saclay
+        </div>
+
+        <div class="degree">
+          <h3>BAC +4 | Marketing & Business Administration <sup>2012 – 2016</sup></h3>
+          <p>University of Economics, Ho Chi Minh City</p>
+        </div>
+      </section>
+
+      <!-- ACADEMIC ACHIEVEMENT -->
+      <section class="block edu">
+        <h2>Academic Achievement</h2>
+
+        <div class="degree">
+          <h3>Eiffel Excellence Scholarship <sup>2019 – 2020</sup></h3>
+          Awarded by the French Ministry for Europe and Foreign Affairs.
+        </div>
+
+        <div class="degree">
+          <h3>GPA: 15.08/20 <sup>2012 – 2016</sup></h3>
+          4 UEH scholarships for excellent students.
+        </div>
+
+        <div class="degree">
+          <h3>Digital Marketing Postersession <sup>2015</sup></h3>
+          1st prize – Big Data.
+        </div>
+
+        <div class="degree">
+          <h3>UEH Excellent Assignment Award <sup>2014</sup></h3>
+          Strategic Management.
+        </div>
+      </section>
+
+      <!-- ACTIVITIES -->
+      <section class="block edu">
+        <h2>Activities & Volunteer Work</h2>
+
+        <div class="degree">
+          <h3>Salon « Bienvenue en France! » - l'Ambassade de France au Vietnam <sup>2017</sup></h3>
+          Interpreter for Audencia Business School's representative.
+        </div>
+
+        <div class="degree">
+          <h3>Narrow the Gap - LIN Center for Community Development <sup>2016</sup></h3>
+          Communications volunteer:
+          In charge of "Doing Good Together" campaign with more than 1000 people involved.
+        </div>
+
+        <div class="degree">
+          <h3>Forum « Étudier en France » - l'Union des étudiants vietnamiens en France <sup>2013 – 2017</sup></h3>
+          <p>Event Volunteer for 5 years in a row.</p>
+        </div>
+
+        <div class="degree">
+          <h3>French Club - UEH Student Association <sup>2013 – 2014</sup></h3>
+          <p>Club President: Led a core team of 10 people to host 12 college events and 3 internal training programs.</p>
+          <p>Created the “Fly over Europe's skies” competition with over 4000 participants.</p>
+          <p>Dean's Citation for Leadership.</p>
+        </div>
+
+        <div class="degree">
+          <h3>Entrance Exam Support Program - UEH Student Association <sup>2014</sup></h3>
+          <p>Communications Volunteer: edited newspapers, wrote articles and conducted interviews.</p>
+        </div>
+
+        <div class="degree">
+          <h3>Exchange Student Program, Rissho University <sup>2013</sup></h3>
+          <p>Volunteer: welcomed students from Rissho University (Japan) to Ho Chi Minh City.</p>
+        </div>
+      </section>
+
+      <!-- TOOLBOX -->
+      <section class="block skills">
+        <h2>Toolbox</h2>
+        <ul>
+          <li class="pri-tag">Python</li>
+          <li class="pri-tag">SQL</li>
+          <li class="pri-tag">Airflow</li>
+          <li class="pri-tag">AWS</li>
+          <li class="pri-tag">Databricks</li>
+          <li class="pri-tag">Snowflake</li>
+          <li class="pri-tag">dbt</li>
+          <li class="sec-tag">Docker</li>
+          <li class="sec-tag">Terraform</li>
+          <li class="sec-tag">Grafana</li>
+          <li class="sec-tag">Kubernetes</li>
+          <li class="sec-tag">Git</li>
+          <li class="sec-tag">GitLab</li>
+          <li class="sec-tag">GCP</li>
+          <li class="sec-tag">Database Management</li>
+          <li class="sec-tag">Data Modeling</li>
+          <li class="sec-tag">ETL / ELT</li>
+          <li class="sec-tag">Data Observability</li>
+        </ul>
+      </section>
+
+      <!-- PERSONAL INTERESTS -->
+      <section class="block skills">
+        <h2>Personal Interests</h2>
+        <ul>
+          <li class="pri-tag">Reading</li>
+          <li class="pri-tag">Pragmatic Programming</li>
+          <li class="pri-tag">Social Psychology</li>
+          <li class="pri-tag">AI</li>
+          <li class="pri-tag">All Things Data</li>
+          <li class="pri-tag">All Things Engineering</li>
+		<li class="pri-tag">Pilates</li>
+          <li class="pri-tag">Learning New Things</li>
+        </ul>
+      </section>
+
+      <footer>
+        Last Updated: 2026-11. All written by a certified human bean.
+      </footer>
+
     </div>
-    <div class="degree">
-     <h3>Master 2 | Network Industries and Digital Economy (IREN) <sup>2019 – 2020</sup></h3>
-      Paris-Dauphine University, Télécom Paris & University of Paris-Saclay
-    </div>
-    <div class="degree">
-     <h3>Master 1 | Innovation, Entreprise, Society (IES) <sup>2018 – 2019 </sup></h3>
-      École Polytechnique & University of Paris-Saclay
-    </div>
-    <div class="degree">
-      <h3>BAC +4 | Marketing & Business Administration <sup>2012 – 2016 </sup> </h3>
-      <p>University of Economics, Ho Chi Minh City 
-      </p>
-    </div>
-  </section>
-  <section class="block edu">
-    <h2>Academic Achievement</h2>
-    <div class="degree">
-     <h3>Eiffel Excellence Scholarship<sup> 2019 – 2020 </sup></h3>
-     awarded by the French Ministry for Europe and Foreign Affairs
-    </div>
-    <div class="degree">
-     <h3>GPA: 15.08/20 <sup>2012 – 2016 </sup></h3>
-      4 UEH scholarships for excellent students
-    </div>
-    <div class="degree">
-      <h3>Digital Marketing Postersession  <sup>2015 </sup> </h3>
-      1st prize – Big Data 
-    </div>
-    <div class="degree">
-      <h3>UEH Excellent Assignment Award  <sup>2014 </sup> </h3>
-      Strategic Management<!-- Analysis of some factors affecting the beer industry in Vietnam – opportunities and challenges for enterprises from now until 2020-->
-    </div>
-  </section>
-  
 
-  <section class="block edu">
-    <h2>Activities & volunteer work</h2>
-    <div class="degree">
-     <h3>Salon « Bienvenue en France! » - l'Ambassade de France au Vietnam <sup>2017</sup></h3>
-      Interpreter for Audencia Business School's representative 
-    </div>
-    <div class="degree">
-     <h3>Narrow the gap - LIN Center for Community Development <sup>2016</sup></h3>
-      Communications volunteer: 
-      In charge of "Doing good together" campaign with more than 1000 people involved.
-    </div>
-    <div class="degree">
-      <h3>Forum « Etudier en France » - l'Union des étudiants vietnamiens en France  <sup>2013 – 2017 </sup></h3>
-      <p>Event Volunteer for 5 years in a row.</p>
-    </div>
-    <div class="degree">
-      <h3>French Club - UEH Student Association <sup>2013 - 2014 </sup> </h3>
-      <p>Club President: Lead a core team of 10 people to host 12 college events and 3 internal training programs. </p>
-      <p>Create the “Fly over Europe’s skies” competition with over 4000 participants. 
-      </p>
-      <p>Dean's Citation for Leadership </p>
-    </div>
-    <div class="degree">
-      <h3>Entrance Exam Support Program - UEH Student Association <sup>2014 </sup> </h3>
-      <p>Communications Volunteer: edit newspapers, write articles and conduct interviews. 
-      </p>
-    </div>
-    <div class="degree">
-      <h3>Exchange Student Program, Rissho University <sup>2013</sup> </h3>
-      <p>Volunteer: welcome students from Rissho University (Japan) to Hochiminh City. 
-      </p>
-    </div>
-  </section>
-
-<!--
- ===========	START TOOLBOX ===========	
-	-->
-  <section class="block skills">
-    <h2>Toolbox</h2>
-    <ul>
-      <li class="pri-tag">Airflow</li>
-      <li class="pri-tag">Python</li>
-      <li class="pri-tag">Database Management</li>
-      <li class="sec-tag">Docker</li>
-      <li class="sec-tag">Kubernetes</li>
-      <li class="sec-tag">Gitlab</li>
-      <li class="sec-tag">SQL</li>
-      <li class="sec-tag">Designing</li>
-      <li class="sec-tag">Optimization</li>
-      <li class="sec-tag">AWS</li>
-      <li class="sec-tag">GCP</li>
-
-    </ul>
-  </section>
-  <section class="block skills">
-    <h2>Personal interests</h2>
-    <ul>
-      <li class="pri-tag">Reading</li>
-      <li class="pri-tag">Writing</li>
-      <li class="pri-tag">Pragmatic Programming</li>
-      <li class="pri-tag">Social Psychology</li>
-      <li class="pri-tag">Blockchain</li>
-      <li class="pri-tag">All things Data</li>
-      <li class="pri-tag">All things Engineering</li>
-      <li class="pri-tag">Learning new things</li>
-      
-    </ul>
-  </section>
-  <footer><!-- DOWNLOAD CV BUTTON -->Last Updated: 2024-09. All written by a certified human bean.</footer>
-  
-</div>
-  
-  
-
-
-  
-  
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="js/holder.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-
-
-</body>
+  </body>
 </html>
